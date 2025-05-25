@@ -708,6 +708,4 @@ if (process.env.NODE_ENV === 'development') {
     config: apiConfig
   };
   
-  console.log('Book Review API exposed to window.bookReviewAPI for debugging');
 }
-

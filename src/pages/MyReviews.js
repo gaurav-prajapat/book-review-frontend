@@ -71,12 +71,10 @@ const MyReviews = () => {
         throw new Error('User ID not available');
       }
       
-      console.log('Fetching reviews for user:', user.id);
       
       // Use the correct API call that matches backend route
       const response = await reviewsAPI.getUserReviews(user.id);
       
-      console.log('API Response:', response);
       
       // Handle different response structures and ensure we always get an array
       let reviewsData = [];
@@ -105,9 +103,7 @@ const MyReviews = () => {
         console.warn('Reviews data is not an array:', reviewsData);
         reviewsData = [];
       }
-      
-      console.log('Processed reviews data:', reviewsData);
-      
+            
       setReviews(reviewsData);
       calculateStats(reviewsData);
       

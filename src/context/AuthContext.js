@@ -94,7 +94,6 @@ export const AuthProvider = ({ children }) => {
       setUser(userData);
       setIsAuthenticated(true);
       
-      console.log('Login successful:', message);
       return { success: true, user: userData, message };
     } catch (err) {
       console.error('Login error:', err);
@@ -135,7 +134,6 @@ export const AuthProvider = ({ children }) => {
       setUser(userData);
       setIsAuthenticated(true);
       
-      console.log('Admin login successful:', message);
       return { success: true, user: userData, message };
     } catch (err) {
       console.error('Admin login error:', err);
@@ -174,7 +172,6 @@ export const AuthProvider = ({ children }) => {
       setUser(userData);
       setIsAuthenticated(true);
       
-      console.log('Demo login successful:', message);
       return { success: true, user: userData, message };
     } catch (err) {
       console.error('Demo login error:', err);
@@ -222,7 +219,6 @@ export const AuthProvider = ({ children }) => {
       setUser(newUser);
       setIsAuthenticated(true);
       
-      console.log('Registration successful:', message);
       return { success: true, user: newUser, message };
     } catch (err) {
       console.error('Registration error:', err);
@@ -250,7 +246,6 @@ export const AuthProvider = ({ children }) => {
       setError('');
       setLoading(false);
       
-      console.log('Logout successful');
       return { success: true, message: 'Logged out successfully' };
     } catch (error) {
       console.error('Logout error:', error);
@@ -272,7 +267,6 @@ export const AuthProvider = ({ children }) => {
         // Update local storage and state with fresh data
         localStorage.setItem('user', JSON.stringify(updatedUser));
         setUser(updatedUser);
-        console.log('User profile updated:', message);
         return { success: true, user: updatedUser, message };
       } else {
         // Fallback to local update if server doesn't return user data
@@ -316,7 +310,6 @@ export const AuthProvider = ({ children }) => {
       });
 
       const { message } = response.data;
-      console.log('Password changed successfully:', message);
       return { success: true, message: message || 'Password changed successfully' };
     } catch (error) {
       console.error('Change password error:', error);
