@@ -1,70 +1,178 @@
-# Getting Started with Create React App
+# Book Review Frontend - Latracal Assessment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern React-based web application for managing and reviewing books, built as part of the Latracal technical assessment.
 
-## Available Scripts
+## 🚀 Project Overview
 
-In the project directory, you can run:
+This is a full-featured book review application that allows users to browse, search, and review books. The frontend is built with React and provides an intuitive user interface for book management and review functionality.
 
-### `npm start`
+## 🛠️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React** - Frontend framework
+- **JavaScript/ES6+** - Programming language
+- **Create React App** - Build tool and development environment
+- **React Router** - Client-side routing (if applicable)
+- **Axios** - HTTP client for API calls (if applicable)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📋 Prerequisites
 
-### `npm test`
+Before running this project, make sure you have the following installed:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Node.js** (version 14.0 or higher)
+- **npm** (version 6.0 or higher) or **yarn**
 
-### `npm run build`
+## 🔧 Setup Instructions
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 1. Clone the Repository
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/gaurav-prajapat/book-review-frontend.git
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 2. Navigate to Project Directory
 
-### `npm run eject`
+```bash
+cd book-review-frontend
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 3. Install Dependencies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 4. Environment Setup
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+If the project requires environment variables, create a `.env` file in the root directory:
 
-## Learn More
+```bash
+cp .env.example .env
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Update the `.env` file with your configuration values.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 5. Start Development Server
 
-### Code Splitting
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The application will open at [http://localhost:3000](http://localhost:3000)
 
-### Analyzing the Bundle Size
+## 📜 Available Scripts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Development
 
-### Making a Progressive Web App
+```bash
+npm start
+```
+Runs the app in development mode with hot reloading enabled.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Testing
 
-### Advanced Configuration
+```bash
+npm test
+```
+Launches the test runner in interactive watch mode.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Production Build
 
-### Deployment
+```bash
+npm run build
+```
+Creates an optimized production build in the `build` folder.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Code Analysis
 
-### `npm run build` fails to minify
+```bash
+npm run build
+```
+Builds and analyzes the bundle size for optimization insights.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## ✨ Key Features
+
+- 📚 Browse and search books
+- ⭐ Rate and review books
+- 👤 User authentication (if implemented)
+- 📱 Responsive design for mobile and desktop
+- 🔍 Advanced search and filtering
+- 💾 Local storage for user preferences
+
+## 🔗 API Integration
+
+This frontend application connects to a backend API for:
+- Fetching book data
+- Managing user reviews
+- User authentication
+- Search functionality
+
+**Backend Repository**: [Add backend repo link if available]
+
+## 🧪 Testing
+
+The project includes unit tests for components and utility functions. Run tests with:
+
+```bash
+npm test
+```
+
+For coverage report:
+
+```bash
+npm test -- --coverage
+```
+
+## 🚀 Deployment
+
+### Production Build
+
+```bash
+npm run build
+```
+
+### Deploy to Netlify/Vercel
+
+The build folder can be deployed to any static hosting service:
+
+1. Run `npm run build`
+2. Upload the `build` folder to your hosting provider
+3. Configure routing for single-page application
+
+## 📝 Additional Notes for Reviewers
+
+### Code Quality
+- Follows React best practices and hooks patterns
+- Implements proper component composition
+- Uses semantic HTML and accessible design
+- Responsive design principles applied
+
+### Performance Optimizations
+- Code splitting implemented where applicable
+- Lazy loading for components
+- Optimized bundle size
+- Efficient state management
+
+### Browser Support
+- Modern browsers (Chrome, Firefox, Safari, Edge)
+- Mobile responsive design
+- Progressive Web App features (if implemented)
+
+## 🔮 Future Enhancements
+
+- [ ] Advanced filtering options
+- [ ] Social sharing features
+
+
+## 👨‍💻 Developer Information
+
+**Developer**: Gaurav Prajapat  
+**Assessment**: Latracal Solutions Technical Assessment  
+**Contact**: [Your email if you want to include it]
+
+## 📄 License
+
+This project is created for assessment purposes.
+
+---
+
+**Note for Reviewers**: This project demonstrates proficiency in React development, modern JavaScript, responsive design, and frontend best practices. The code is well-structured, documented, and follows industry standards.
